@@ -1,0 +1,26 @@
+.header {
+    display: flex; /* All items in a single row, default direction is row */
+}
+
+.header__first {
+    display: flex; /* All items in a single row, default direction is row */
+}
+
+/* CSS Selctor for image inside the header__first class*/
+.header__first > img {
+    object-fit: contain; /* Keeping the aspect ratio */
+    height: 2.5rem;
+}
+
+.header__search {
+    display: flex; /* All items in a single row, default direction is row */
+    padding: 0.625rem;
+    align-items: center;
+    color: rgba(0, 0, 0, 0, 6);
+}
+
+.header__search > input {
+    border: none; /* Removes the border */
+    background: none; /* Removes the background */
+    outline: none; /* Removes the outline of the input box */
+}
