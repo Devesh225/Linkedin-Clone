@@ -1,0 +1,23 @@
+.headerItem {
+    display: flex;
+    flex-direction: column; /* Column Direction */
+    align-items: center;
+    margin-right: 1.25rem;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer; /* Cursor becomes pointer upon hover */
+}
+
+.headerItem:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.headerItem__title {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.headerItem__icon {
+    object-fit: contain; /* Aspect Ratio */
+    height: 1.4rem !important;
+    width: 1.4rem !important;
+}

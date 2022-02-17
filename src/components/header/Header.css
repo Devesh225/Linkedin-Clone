@@ -1,26 +1,44 @@
 .header {
     display: flex; /* All items in a single row, default direction is row */
+    justify-content: space-evenly; /* Content spreads equally from both sides of the window */
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.1); /* Header Bottom Border */
+    width: 100%;
+    position: sticky; /* Sticks the Header */
+    top: 0; /* Sticks the Header to the top of the webpage */
+    z-index: 999; /* Make it look above the page */
 }
 
 .header__first {
     display: flex; /* All items in a single row, default direction is row */
+    align-items: center;
 }
 
 /* CSS Selctor for image inside the header__first class*/
 .header__first > img {
     object-fit: contain; /* Keeping the aspect ratio */
-    height: 2.5rem;
+    height: 2.3rem;
+    background-color: #0a66c2;
+    margin-right: 0.625rem;
 }
 
 .header__search {
     display: flex; /* All items in a single row, default direction is row */
-    padding: 0.625rem;
+    padding: 0.32rem;
     align-items: center;
     color: rgba(0, 0, 0, 0, 6);
+    height: 1.325rem;
+    background-color: #eef3f8;
+    width: 15rem;
 }
 
 .header__search > input {
     border: none; /* Removes the border */
     background: none; /* Removes the background */
     outline: none; /* Removes the outline of the input box */
+}
+
+.header__second {
+    display: flex;
 }
