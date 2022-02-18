@@ -1,0 +1,132 @@
+.homeSidebar {
+    position: sticky; /* will stick to the top */
+    top: 5rem; /* sticks the given value below the header */
+    flex: 0.2; /* the given value is the display border for the component of this class */
+    border-radius: 0.75rem;
+    text-align: center;
+    height: fit-content; /* stretch the height until fits the content */
+}
+
+.homeSidebar__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1px solid rgba(0, 0, 0, 0.1); /* Border to make it look like a container */
+    border-bottom: 0; /* No bottom border */
+    border-top-left-radius: 0.625rem; /* Curvy Corners at Top Left */
+    border-top-right-radius: 0.625rem; /* Curvy Corners at Top Right */
+    background-color: white;
+    padding-bottom: 0.625rem;
+}
+
+.homeSidebar__top > h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.homeSidebar__top > h2:hover {
+    text-decoration: underline;
+}
+
+.homeSidebar__top > p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.homeSidebar__top > img {
+    width: 100%; /* Takes the size of container */
+    margin-bottom: -2.75rem; /* Dropping the background image into the avatar */
+    /* height: 3.2rem; Squeeze the image as in original Linkedin */
+    border-top-left-radius: 0.625rem; /* Curvy Corners at Top Left */
+    border-top-right-radius: 0.625rem; /* Curvy Corners at Top Right */
+    object-fit: cover; /* Aspect Ratio */
+}
+
+.homeSidebar__avatar {
+    margin-bottom: 0.625rem;
+    cursor: pointer;
+}
+
+.homeSidebar__stats {
+    padding: 0.625rem;
+    background-color: white;
+    border: 0.1px solid rgba(0, 0, 0, 0.1); /* Border to make it look like a container */
+    border-bottom: 0;
+}
+
+.homeSidebar__statBlock {
+    display: flex;
+    justify-content: space-between; /* The content throws itself towards the sides leaving space in between */
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.homeSidebar__statBlock > p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.homeSidebar__statValue {
+    font-weight: bold;
+    color: #0a66c2 !important;
+}
+
+.homeSidebar__bookmark {
+    display: flex;
+    align-items: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 0.625rem; /* Curvy Corners at Bottom Left */
+    border-bottom-right-radius: 0.625rem; /* Curvy Corners at Bottom Right */
+    background-color: white;
+    padding: 0.35rem;
+}
+
+.homeSidebar__bookmark > p {
+    margin-left: 0.25rem;
+}
+
+.homeSidebar__bottom {
+    text-align: left;
+    padding: 0.5rem;
+    background-color: white;
+    margin-top: 0.625rem;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 0.625rem; /* Curvy Corners at Top Left */
+    border-top-right-radius: 0.625rem; /* Curvy Corners at Top Right */
+}
+
+.homeSidebar__recent {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem;
+}
+
+.homeSidebar__recent > p {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.homeSidebar__groupEventHashtag {
+    margin-top: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem;
+}
+
+.homeSidebar__groupEventHashtag > p {
+    cursor: pointer;
+    font-weight: 500;
+    color: #0a66c2;
+    margin-bottom: 0.5rem;
+}
+
+.homeSidebar__groupEventHashtag > p:hover {
+    text-decoration: underline #0a66c2;
+}

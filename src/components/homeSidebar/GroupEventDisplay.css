@@ -1,0 +1,13 @@
+.groupEventDisplay {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 0.2rem;
+}
+.groupEventDisplay > p {
+    padding-left: 0.5rem;
+}
+
+.groupEventDisplay:hover {
+    color: black;
+}
