@@ -8,6 +8,7 @@
     position: sticky; /* Sticks the Header */
     top: 0; /* Sticks the Header to the top of the webpage */
     z-index: 999; /* Make it look above the page */
+    background-color: white;
 }
 
 .header__first {

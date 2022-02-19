@@ -1,10 +1,11 @@
 .homeSidebar {
     position: sticky; /* will stick to the top */
     top: 5rem; /* sticks the given value below the header */
-    flex: 0.2; /* the given value is the display border for the component of this class */
+    flex: 0.18; /* the given value is the display area for the component of this class */
     border-radius: 0.75rem;
     text-align: center;
     height: fit-content; /* stretch the height until fits the content */
+    margin: 1.5rem;
 }
 
 .homeSidebar__top {
@@ -59,7 +60,11 @@
 .homeSidebar__statBlock {
     display: flex;
     justify-content: space-between; /* The content throws itself towards the sides leaving space in between */
-    padding: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.5rem 0;
+}
+
+.homeSidebar__statBlock:hover {
+    background-color: whitesmoke;
 }
 
 .homeSidebar__statBlock > p {
@@ -76,13 +81,17 @@
 .homeSidebar__bookmark {
     display: flex;
     align-items: left;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
     border: 0.1px solid rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 0.625rem; /* Curvy Corners at Bottom Left */
     border-bottom-right-radius: 0.625rem; /* Curvy Corners at Bottom Right */
     background-color: white;
     padding: 0.35rem;
+}
+
+.homeSidebar__bookmark:hover {
+    background-color: whitesmoke;
 }
 
 .homeSidebar__bookmark > p {

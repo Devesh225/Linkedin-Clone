@@ -4,6 +4,11 @@
     cursor: pointer;
     padding-bottom: 0.2rem;
 }
+
+.groupEventDisplay:hover {
+    background-color: whitesmoke;
+}
+
 .groupEventDisplay > p {
     padding-left: 0.5rem;
 }

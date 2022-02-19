@@ -1,0 +1,51 @@
+.homeFeed {
+    flex: 0.48; /* Display Area */
+    margin: 1.5rem;
+}
+
+.homeFeed__inputArea {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0.62rem;
+    border-radius: 0.625rem;
+    margin-bottom: 1.2rem;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+
+.homeFeed__avatarText {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.homeFeed__inputText {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5rem;
+    margin-left: 0.625rem;
+    width: 100%;
+    padding: 0.75em;
+}
+
+.homeFeed__inputText > form {
+    display: flex;
+}
+
+/* Targeting the input inside the form */
+.homeFeed__inputText > form > input {
+    outline-width: 0;
+    border-radius: 5rem;
+    font-weight: 600;
+    margin-left: 0.625rem;
+    border: 0;
+    width: 100%;
+}
+
+.homeFeed__inputText > form > button {
+    display: none;
+}
+
+.homeFeed__inputOptions {
+    display: flex;
+    justify-content: space-between;
+}

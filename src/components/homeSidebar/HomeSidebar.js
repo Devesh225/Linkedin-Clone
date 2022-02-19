@@ -27,8 +27,8 @@ function HomeSidebar() {
           </div>
       </div>
       <div className='homeSidebar__bookmark'>
-          <BookmarkIcon fontSize='small'/> 
-          <p>My Items</p>
+          <BookmarkIcon fontSize='small' opacity='0.7'/> 
+          <p>My items</p>
       </div>
 
       <div className="homeSidebar__bottom">
