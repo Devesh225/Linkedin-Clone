@@ -1,0 +1,41 @@
+.post {
+    background-color: white;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.post__header {
+    display: flex;
+    margin-bottom: 0.625rem;
+    align-items: center;
+}
+
+.post__headerInfo {
+    margin-left: 0.625rem;
+}
+
+.post__headerInfo > h2 {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.post__headerInfo > p {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.post__body {
+    overflow-wrap: anywhere; /*If the text is more than the width, it will adjust itself in the next line*/
+}
+
+.post__body > p {
+    font-size: 0.95rem;
+}
+
+.post__reactButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

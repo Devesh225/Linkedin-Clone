@@ -28,7 +28,7 @@ function HomeFeed() {
               <InputOption Icon={AssignmentIcon} title='Write article' color='#fc9295'/>
             </div>
         </div>
-        <Post />
+        <Post userName='Devesh Tulshyan' userDescription='Coder, Developer, Musician, Teacher.' timeSincePosted='2hr ago' postMessage='Rock Cat Band' postImageURL='https://cdn.custom-cursor.com/cursors/rock_bongo_cat_947.png' />
     </div>
   )
 }
