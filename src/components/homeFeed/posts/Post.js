@@ -8,7 +8,7 @@ import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 
 
-function Post({ userName, userDescription, timeSincePosted, postMessage, postImageURL }) {
+function Post({ userName, userDescription, postMessage, postImageURL }) {
   return (
     <div className='post'>
       <div className="post__header">
@@ -16,12 +16,11 @@ function Post({ userName, userDescription, timeSincePosted, postMessage, postIma
       <div className="post__headerInfo">
         <h2>{userName}</h2>
         <p>{userDescription}</p>
-        <p>{timeSincePosted}</p>
       </div>
       </div>
       <div className="post__body">
         <p>{postMessage}</p>
-        <img src={postImageURL} alt="Post Image" />
+        <img src={postImageURL} alt="Post" />
       </div>
       <div className="post__reactButtons">
         <InputOption Icon={ThumbUpOutlinedIcon} title='Like' color='rgba(0, 0, 0, 0.6)' />
