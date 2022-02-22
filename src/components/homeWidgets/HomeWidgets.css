@@ -44,8 +44,25 @@
 }
 
 .homeWidgets__footer {
-    background-color: white;
     margin-top: 0.625rem;
-    border: 0.1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.625rem;
+}
+
+.homeWidgets__footer > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.homeWidgets__footer > ul > li {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+}
+
+.homeWidgets__linkedinBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.625rem;
+    text-align: center;
+    font-size: 0.75rem;
 }

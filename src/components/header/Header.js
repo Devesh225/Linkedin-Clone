@@ -7,6 +7,7 @@ import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import WorkIcon from '@mui/icons-material/Work';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AppsIcon from '@mui/icons-material/Apps';
 
 
@@ -16,7 +17,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__first"> {/*First Part of Header containing Icon and Search Bar*/}
-        <img src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1645104100~hmac=bbb365c2aca80ced4f9f68e2a672b0c2" alt="" />
+        <LinkedInIcon sx={{height: '2.5rem', width: '2.5rem', color: '#0a66c2'}}/>
         <div className="header__search">
           <SearchIcon />
           <input type="text" />

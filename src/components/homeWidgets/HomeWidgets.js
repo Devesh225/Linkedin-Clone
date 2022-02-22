@@ -2,6 +2,7 @@ import React from 'react'
 import InfoIcon from '@mui/icons-material/Info';
 import './HomeWidgets.css';
 import WidgetArticle from './WidgetArticle';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function HomeWidgets() {
   return (
@@ -23,19 +24,22 @@ function HomeWidgets() {
         <img src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg" alt="" />
       </div>
       <div className="homeWidgets__footer">
-        <p>About</p>
-        <p>Accessibility</p>
-        <p>Help Center</p>
-        <p>Privacy & Terms</p>
-        <p>Ad Choices</p>
-        <p>Advertizing</p>
-        <p>Business Services</p>
-        <p>Get the LinkedIn app</p>
-        <p>More</p>
-        {/* LinkedIn Full banner Logo */}
-        <h3>LinkedIn Corporation © 2022</h3>
+        <ul>
+          <li>About</li>
+          <li>Accessibility</li>
+          <li>Help Center</li>
+          <li>Privacy & Terms</li>
+          <li>Ad Choices</li>
+          <li>Advertizing</li>
+          <li>Business Services</li>
+          <li>Get the LinkedIn app</li>
+          <li>More</li>
+        </ul>
       </div>
-
+      <div className="homeWidgets__linkedinBanner">
+        <LinkedInIcon sx={{height: '1.5rem', width: '1.5rem', color: '#0a66c2'}}/>
+        <p>LinkedIn Corporation © 2022</p>
+      </div>
     </div>
   );
 }
