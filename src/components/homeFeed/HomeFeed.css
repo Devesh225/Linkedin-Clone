@@ -1,5 +1,5 @@
 .homeFeed {
-    flex: 0.6; /* Display Area */
+    flex: 0.5; /* Display Area */
     margin: 1.5rem;
 }
 
@@ -17,6 +17,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.homeFeed__avatar {
+    cursor: pointer;
 }
 
 .homeFeed__inputText {

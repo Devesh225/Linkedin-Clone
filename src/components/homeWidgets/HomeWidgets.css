@@ -1,0 +1,51 @@
+.homeWidgets {
+    flex: 0.3;
+    position: sticky;
+    margin: 1.5rem;
+    height: fit-content;
+    margin-bottom: 1.2rem;
+}
+
+.homeWidgets__articles {
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+}
+
+.homeWidgets__articlesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.15rem;
+}
+
+.homeWidgets__infoIcon {
+    cursor: pointer;
+}
+
+.homeWidgets__articlesHeader > h2 {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.homeWidgets__articlesInformation {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.homeWidgets__linkedinJobsAd {
+    padding: 0.5rem;
+    background-color: white;
+    margin-top: 0.625rem;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+}
+
+.homeWidgets__footer {
+    background-color: white;
+    margin-top: 0.625rem;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+}

@@ -1,0 +1,42 @@
+.widgetArticle {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetArticle:hover {
+    background-color: whitesmoke;
+}
+
+.widgetArticle__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.widgetArticle__top > h2 {
+    font-size: 0.9rem;
+    padding: 0.25rem;
+    margin-left: 0.25rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.widgetArticle__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.widgetArticle__bottom > p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.75rem;
+    padding: 0.25rem;
+}
+
+.widgetArticle__time {
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.widgetArticle__readers {
+    margin-left: 0.2rem;
+}

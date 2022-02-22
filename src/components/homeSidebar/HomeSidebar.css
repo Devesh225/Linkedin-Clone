@@ -1,6 +1,5 @@
 .homeSidebar {
     position: sticky; /* will stick to the top */
-    top: 5rem; /* sticks the given value below the header */
     flex: 0.2; /* the given value is the display area for the component of this class */
     border-radius: 0.75rem;
     text-align: center;

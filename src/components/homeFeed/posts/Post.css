@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.post__avatar {
+    cursor: pointer;
+}
+
 .post__headerInfo {
     margin-left: 0.625rem;
 }
