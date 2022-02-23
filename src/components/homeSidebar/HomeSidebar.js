@@ -12,7 +12,7 @@ function HomeSidebar() {
     <div className='homeSidebar'>
       <div className="homeSidebar__top">
         <img src="https://wallpaperaccess.com/full/2068772.jpg" alt=""/>
-        <Avatar className='homeSidebar__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '5rem', height: '5rem'}}/>
+        <Avatar className='homeSidebar__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '5.15vw', height: '5.15vw'}}/>
         <h2>Devesh Tulshyan</h2>
         <p>Coder, Developer, Musician, Teacher.</p>
       </div>
@@ -27,7 +27,7 @@ function HomeSidebar() {
           </div>
       </div>
       <div className='homeSidebar__bookmark'>
-          <BookmarkIcon fontSize='small' opacity='0.7'/> 
+          <BookmarkIcon fontSize='small' opacity='0.7' sx={{height: '1.75vw', width: '1.75vw'}}/> 
           <p>My items</p>
       </div>
 

@@ -7,4 +7,6 @@
 
 .app__home {
     display: flex;
+    justify-content: space-evenly;
+    margin: 2vw 0;
 }

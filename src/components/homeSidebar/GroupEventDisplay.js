@@ -4,7 +4,7 @@ import './GroupEventDisplay.css';
 function GroupEventDisplay({ DisplayIcon, title }) {
   return (
     <div className='groupEventDisplay'>
-        <DisplayIcon />
+        <DisplayIcon sx={{height: '1.75vw', width: '1.75vw'}}/>
         <p>{title}</p>
     </div>
   )

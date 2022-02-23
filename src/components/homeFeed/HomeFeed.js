@@ -60,7 +60,7 @@ function HomeFeed() {
     <div className='homeFeed'>
         <div className="homeFeed__inputArea">
           <div className="homeFeed__avatarText">
-          <Avatar className='homeFeed__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '3rem', height: '3rem'}}/>
+          <Avatar className='homeFeed__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '3.15vw', height: '3.15vw'}}/>
               <div className="homeFeed__inputText">
                   <form>
                       {/* Getting the value of the text from e.target.value and setting the value to the current input text state. */}

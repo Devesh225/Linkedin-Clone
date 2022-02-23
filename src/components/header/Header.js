@@ -10,16 +10,13 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AppsIcon from '@mui/icons-material/Apps';
 
-
-
-
 function Header() {
   return (
     <div className="header">
       <div className="header__first"> {/*First Part of Header containing Icon and Search Bar*/}
-        <LinkedInIcon sx={{height: '2.5rem', width: '2.5rem', color: '#0a66c2'}}/>
+        <LinkedInIcon sx={{height: '2.65vw', width: '2.65vw', color: '#0a66c2'}}/>
         <div className="header__search">
-          <SearchIcon />
+          <SearchIcon sx={{height: '1.75vw', width: '1.75vw'}}/>
           <input type="text" />
         </div>
       </div>

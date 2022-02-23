@@ -10,7 +10,7 @@ function HomeWidgets() {
       <div className="homeWidgets__articles">
         <div className="homeWidgets__articlesHeader">
             <h2>LinkedIn News</h2>
-            <InfoIcon className='homeWidgets__infoIcon' sx={{height: '1.2rem', width: '1.2rem'}} />
+            <InfoIcon className='homeWidgets__infoIcon' sx={{height: '1.37vw', width: '1.37vw'}} />
         </div>
         <div className="homeWidgets__articlesInformation">
             <WidgetArticle title="Worker's side hustles worry firms." time='2hr ago' readers='24605' />
@@ -37,7 +37,7 @@ function HomeWidgets() {
         </ul>
       </div>
       <div className="homeWidgets__linkedinBanner">
-        <LinkedInIcon sx={{height: '1.5rem', width: '1.5rem', color: '#0a66c2'}}/>
+        <LinkedInIcon sx={{height: '1.65vw', width: '1.65vw', color: '#0a66c2'}}/>
         <p>LinkedIn Corporation © 2022</p>
       </div>
     </div>

@@ -12,7 +12,7 @@ function Post({ userName, userDescription, postMessage, postImageURL }) {
   return (
     <div className='post'>
       <div className="post__header">
-      <Avatar className='post__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '3rem', height: '3rem'}}/>
+      <Avatar className='post__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '3.17vw', height: '3.17vw'}}/>
       <div className="post__headerInfo">
         <h2>{userName}</h2>
         <p>{userDescription}</p>
@@ -20,7 +20,7 @@ function Post({ userName, userDescription, postMessage, postImageURL }) {
       </div>
       <div className="post__body">
         <p>{postMessage}</p>
-        <img src={postImageURL} alt="Post" />
+        <img src={postImageURL} alt="Post" className='post__image' />
       </div>
       <div className="post__reactButtons">
         <InputOption Icon={ThumbUpOutlinedIcon} title='Like' color='rgba(0, 0, 0, 0.6)' />

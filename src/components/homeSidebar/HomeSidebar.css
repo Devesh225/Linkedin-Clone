@@ -1,10 +1,8 @@
 .homeSidebar {
-    position: sticky; /* will stick to the top */
     flex: 0.2; /* the given value is the display area for the component of this class */
     border-radius: 0.75rem;
     text-align: center;
     height: fit-content; /* stretch the height until fits the content */
-    margin: 1.5rem;
 }
 
 .homeSidebar__top {
@@ -20,7 +18,7 @@
 }
 
 .homeSidebar__top > h2 {
-    font-size: 1.1rem;
+    font-size: 1.3vw;
     font-weight: 600;
     cursor: pointer;
 }
@@ -31,13 +29,14 @@
 
 .homeSidebar__top > p {
     color: rgba(0, 0, 0, 0.6);
-    font-size: 0.75rem;
+    font-size: 0.9vw;
     font-weight: 500;
 }
 
 .homeSidebar__top > img {
     width: 100%; /* Takes the size of container */
-    margin-bottom: -2.75rem; /* Dropping the background image into the avatar */
+    height: auto;
+    margin-bottom: -2.9vw; /* Dropping the background image into the avatar */
     /* height: 3.2rem; Squeeze the image as in original Linkedin */
     border-top-left-radius: 0.625rem; /* Curvy Corners at Top Left */
     border-top-right-radius: 0.625rem; /* Curvy Corners at Top Right */
@@ -68,7 +67,7 @@
 
 .homeSidebar__statBlock > p {
     color: rgba(0, 0, 0, 0.6);
-    font-size: 0.75rem;
+    font-size: 0.9vw;
     font-weight: 600;
 }
 
@@ -79,8 +78,8 @@
 
 .homeSidebar__bookmark {
     display: flex;
-    align-items: left;
-    font-size: 0.75rem;
+    align-items: center;
+    font-size: 0.9vw;
     font-weight: 500;
     border: 0.1px solid rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 0.625rem; /* Curvy Corners at Bottom Left */
@@ -109,7 +108,7 @@
 
 .homeSidebar__recent {
     color: rgba(0, 0, 0, 0.6);
-    font-size: 0.8rem;
+    font-size: 0.95vw;
     font-weight: 600;
     padding: 0.25rem;
 }
@@ -123,7 +122,7 @@
 .homeSidebar__groupEventHashtag {
     margin-top: 1.5rem;
     color: rgba(0, 0, 0, 0.6);
-    font-size: 0.8rem;
+    font-size: 0.95vw;
     font-weight: 600;
     padding: 0.25rem;
 }
@@ -137,4 +136,10 @@
 
 .homeSidebar__groupEventHashtag > p:hover {
     text-decoration: underline #0a66c2;
+}
+
+@media screen and (max-width: 480px) {
+    .homeSidebar {
+        display: none;
+    }
 }

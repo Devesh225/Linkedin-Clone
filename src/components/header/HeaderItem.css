@@ -12,12 +12,12 @@
 }
 
 .headerItem__title {
-    font-size: 0.75rem;
+    font-size: 0.9vw;
     font-weight: 400;
 }
 
 .headerItem__icon {
     object-fit: contain; /* Aspect Ratio */
-    height: 1.4rem !important;
-    width: 1.4rem !important;
+    height: 1.55vw !important;
+    width: 1.55vw !important;
 }

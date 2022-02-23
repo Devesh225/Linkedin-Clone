@@ -14,7 +14,7 @@
 }
 
 .widgetArticle__top > h2 {
-    font-size: 0.9rem;
+    font-size: 1vw;
     padding: 0.25rem;
     margin-left: 0.25rem;
     color: rgba(0, 0, 0, 0.7);
@@ -28,7 +28,7 @@
 
 .widgetArticle__bottom > p {
     color: rgba(0, 0, 0, 0.6);
-    font-size: 0.75rem;
+    font-size: 0.85vw;
     padding: 0.25rem;
 }
 

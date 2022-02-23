@@ -6,12 +6,12 @@ function WidgetArticle( {title, time, readers} ) {
   return (
     <div className='widgetArticle'>
       <div className="widgetArticle__top">
-        <CircleIcon sx={{height: '0.4rem', width: '0.4rem'}} />
+        <CircleIcon sx={{height: '0.55vw', width: '0.55vw'}} />
         <h2>{title}</h2>
       </div>
       <div className="widgetArticle__bottom">
         <p className='widgetArticle__time'>{time}</p>
-        <CircleIcon sx={{height: '0.25rem', width: '0.25rem'}} />
+        <CircleIcon sx={{height: '0.4vw', width: '0.4vw'}} />
         <p className='widgetArticle__readers'>{readers} readers</p>
       </div>
     </div>

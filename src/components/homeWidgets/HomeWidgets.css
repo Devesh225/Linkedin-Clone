@@ -1,7 +1,7 @@
 .homeWidgets {
-    flex: 0.3;
-    position: sticky;
-    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
     height: fit-content;
     margin-bottom: 1.2rem;
 }
@@ -25,7 +25,7 @@
 }
 
 .homeWidgets__articlesHeader > h2 {
-    font-size: 1rem;
+    font-size: 1.2vw;
     color: rgba(0, 0, 0, 0.65);
 }
 
@@ -43,6 +43,11 @@
     border-radius: 0.625rem;
 }
 
+.homeWidgets__linkedinJobsAd > img {
+    max-width: 100%;
+    height: auto;
+}
+
 .homeWidgets__footer {
     margin-top: 0.625rem;
 }
@@ -54,8 +59,9 @@
 }
 
 .homeWidgets__footer > ul > li {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.75rem;
+    padding: 0.58vw 0.85vw;
+    font-size: 0.9vw;
+    cursor: pointer;
 }
 
 .homeWidgets__linkedinBanner {
@@ -64,5 +70,11 @@
     justify-content: center;
     margin-top: 0.625rem;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    .homeWidgets {
+        display: none;
+    }
 }
