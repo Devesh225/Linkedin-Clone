@@ -30,7 +30,7 @@
     border-radius: 5rem;
     margin-left: 0.625rem;
     width: 28.5vw;
-    height: 2.5vw;
+    height: 1.5vw;
     padding: 1vw;
 }
 
@@ -55,10 +55,4 @@
 .homeFeed__inputOptions {
     display: flex;
     justify-content: space-between;
-}
-
-@media screen and (max-width: 480) {
-    .homeFeed {
-        width: 100%;
-    }
 }
