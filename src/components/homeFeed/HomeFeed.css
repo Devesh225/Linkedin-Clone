@@ -30,8 +30,8 @@
     border-radius: 5rem;
     margin-left: 0.625rem;
     width: 28.5vw;
-    height: 1.2vw;
-    padding: 0.75rem;
+    height: 2.5vw;
+    padding: 1vw;
 }
 
 .homeFeed__inputText > form {
@@ -43,7 +43,7 @@
     outline-width: 0;
     border-radius: 5rem;
     font-weight: 600;
-    margin-left: 0.625rem;
+    margin-left: 0.625vw;
     border: 0;
     width: 100%;
 }
@@ -55,4 +55,10 @@
 .homeFeed__inputOptions {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 480) {
+    .homeFeed {
+        width: 100%;
+    }
 }

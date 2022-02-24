@@ -21,3 +21,9 @@
     height: 1.55vw !important;
     width: 1.55vw !important;
 }
+
+@media screen and (max-width: 480px) {
+    .headerItem__title {
+        display: none;
+    }
+}

@@ -139,7 +139,19 @@
 }
 
 @media screen and (max-width: 480px) {
-    .homeSidebar {
+    .homeSidebar__top > img {
+        height: 3rem;
+    }
+
+    .homeSidebar__stats {
+        display: none;
+    }
+
+    .homeSidebar__bookmark {
+        display: none;
+    }
+
+    .homeSidebar__bottom {
         display: none;
     }
 }
