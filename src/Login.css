@@ -1,0 +1,85 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.login__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.login__header {
+    display: flex;
+    align-items: center;
+}
+
+.login__header > p {
+    font-size: 2.5vw;
+    color: #0a66c2;
+    font-weight: 700;
+}
+
+.login__top > p {
+    margin-top: 1.5vw;
+    font-size: 2.5vw;
+}
+
+.login__form {
+    border: 0.1px solid rgba(0, 0, 0, 0.1); /* Border to make it look like a container */
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.login__form > form {
+    margin-bottom: 1.5rem;
+}
+
+.login__formInput {
+    margin: 0.7rem 0;
+}
+
+.login__formInput > p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.95vw;
+    padding-bottom: 0.35rem;
+}
+
+.login__formInput > input {
+    padding: 0.4rem;
+    border-radius: 0.25rem;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    width: 25vw;
+    text-align: center;
+}
+
+.login__formButton {
+    text-align: center;
+}
+
+.login__formButton > button {
+    margin-top: 1.2rem;
+    background-color: #0a66c2;
+    width: 25vw;
+    height: 3.5vw;
+    border-radius: 5rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+
+.login__register {
+    text-align: center !important;
+    font-size: 1.1vw;
+}
+
+.login__register > span {
+    cursor: pointer;
+    color: #0a66c2;
+}
