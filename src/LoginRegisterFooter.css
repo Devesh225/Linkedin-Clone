@@ -1,4 +1,4 @@
-.loginFooter {
+.loginRegisterFooter {
     background-color: white;
     position: fixed;
     bottom: 0;
@@ -7,11 +7,11 @@
     z-index: -999; /* Make the Bottom Nav Bar look below the Page */
 }
 
-.loginFooter__items {
+.loginRegisterFooter__items {
     padding: 0.625rem;
 }
 
-.loginFooter__items > ul {
+.loginRegisterFooter__items > ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
@@ -19,7 +19,7 @@
     padding: 0;
 }
 
-.loginFooter__items > ul > li {
+.loginRegisterFooter__items > ul > li {
     display: flex;
     align-items: center;
     font-size: 0.75vw;
@@ -28,6 +28,6 @@
     cursor: pointer;
 }
 
-.loginFooter__items > ul > li:hover {
+.loginRegisterFooter__items > ul > li:hover {
     text-decoration: underline;
 }

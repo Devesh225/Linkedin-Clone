@@ -1,11 +1,11 @@
 import React from 'react'
-import './LoginFooter.css';
+import './LoginRegisterFooter.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-function LoginFooter() {
+function LoginRegisterFooter() {
   return (
-    <div className='loginFooter'>
-        <div className="loginFooter__items">
+    <div className='loginRegisterFooter'>
+        <div className="loginRegisterFooter__items">
             <ul>
                 <li>Linked<LinkedInIcon sx={{height: '1.65vw', width: '1.65vw', color: '#0a66c2'}}/> Corporation © 2022</li>
                 <li>About</li>
@@ -24,4 +24,4 @@ function LoginFooter() {
   )
 }
 
-export default LoginFooter;
+export default LoginRegisterFooter;

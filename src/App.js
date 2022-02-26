@@ -6,13 +6,13 @@ import HomeFeed from './components/homeFeed/HomeFeed';
 import HomeWidgets from './components/homeWidgets/HomeWidgets';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
-import Login from './Login';
+import LoginRegister from './LoginRegister';
 
 function App() {
   const user = useSelector(selectUser);
   return (
     <div className="app">
-      { !user ? ( <Login /> ) : (
+      { !user ? ( <LoginRegister type='login'/> ) : (
         <Fragment>
           <Header />
           <div className="app__home">
