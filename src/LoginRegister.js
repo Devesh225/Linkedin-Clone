@@ -59,7 +59,7 @@ function LoginRegister( {type} ) {
                     <button type='submit' onClick={loginUser}>{signInSignUp}</button>
                 </div>
             </form>
-                <p className='loginRegister__loginRegisterArea'>{loginRegisterText} <span onClick={loginRegisterTitle == 'Register' ? (registerUser) : (loginUser)}>{loginRegisterTitle}</span></p>
+                <p className='loginRegister__loginRegisterArea'>{loginRegisterText} <span onClick={loginRegisterTitle === 'Register' ? (registerUser) : (loginUser)}>{loginRegisterTitle}</span></p>
         </div>
         <div className="loginRegister__footer">
             <LoginRegisterFooter />
