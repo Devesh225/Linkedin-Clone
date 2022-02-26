@@ -49,14 +49,13 @@
 }
 
 .loginRegister__formInput > input {
-    padding: 0.4rem;
+    padding: 0.55vw;
     border-radius: 0.25rem;
     border-top-width: 1px;
     border-bottom-width: 1px;
     border-right-width: 1px;
     border-left-width: 1px;
     width: 25vw;
-    text-align: center;
 }
 
 .loginRegister__formButton {
