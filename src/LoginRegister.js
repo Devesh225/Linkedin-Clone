@@ -3,9 +3,11 @@ import './LoginRegister.css'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LoginRegisterFooter from './LoginRegisterFooter';
 import { auth } from './Firebase/firebase';
+import { useDispatch } from 'react-redux';
+import { login } from './features/userSlice';
 
 
-function LoginRegister( {type} ) {
+function LoginRegister() {
 
     const [signInSignUp, setSignInSignUp] = useState('Sign In');
     const [loginRegisterText, setLoginRegisterText] = useState('Not a member?');
@@ -14,18 +16,49 @@ function LoginRegister( {type} ) {
     const [profilePicture, setProfilePicture] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const dispatch = useDispatch();
 
-    const loginUser = (e) => {
-        e.preventDefault(); /* Prevents from Submitting the Form */
+    const registerUserScreen = () => {
+        setSignInSignUp('Sign Up');
+        setLoginRegisterText('Already a member?');
+        setLoginRegisterTitle('Login'); 
+    }
+
+    const loginUserScreen = () => {
         setSignInSignUp('Sign In');
         setLoginRegisterText('Not a member?');
         setLoginRegisterTitle('Register');
+    }
+
+    const loginUser = (e) => {
+        e.preventDefault(); /* Prevents from Submitting the Form */
+
     };
 
-    const registerUser = () => {
-        setSignInSignUp('Sign Up');
-        setLoginRegisterText('Already a member?');
-        setLoginRegisterTitle('Login');
+    const registerUser = (e) => {
+
+        e.preventDefault(); /* Prevents from Submitting the Form */
+
+        if(!fullName) {
+            return alert('Please Enter a Valid Name')
+        }
+
+        auth.createUserWithEmailAndPassword(email, password)
+        .then((userAuth) => {
+            userAuth.user.updateProfile({
+                /* displayName and photoURL are firebase keywords. */
+                displayName: fullName,
+                photoURL: profilePicture,
+            })
+            .then(() => {
+                dispatch(login({
+                    uid: userAuth.user.uid,
+                    displayName: fullName,
+                    email: userAuth.user.email,
+                    pictureURL: profilePicture, /* This is not photoURL, this is a local variable. */
+                }));
+            });
+        }).catch(err => alert(err));
     };
 
   return (
@@ -56,10 +89,10 @@ function LoginRegister( {type} ) {
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </div>
                 <div className="loginRegister__formButton">
-                    <button type='submit' onClick={loginUser}>{signInSignUp}</button>
+                    <button type='submit' onClick={signInSignUp ==='Sign Up' ? (registerUser) : (loginUser)}>{signInSignUp}</button>
                 </div>
             </form>
-                <p className='loginRegister__loginRegisterArea'>{loginRegisterText} <span onClick={loginRegisterTitle === 'Register' ? (registerUser) : (loginUser)}>{loginRegisterTitle}</span></p>
+                <p className='loginRegister__loginRegisterArea'>{loginRegisterText} <span onClick={loginRegisterTitle === 'Register' ? (registerUserScreen) : (loginUserScreen)}>{loginRegisterTitle}</span></p>
         </div>
         <div className="loginRegister__footer">
             <LoginRegisterFooter />

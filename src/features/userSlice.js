@@ -7,7 +7,7 @@ export const userSlice = createSlice({  /* userSlice for Application Wide User I
   },
   reducers: { /* Manipulating State */
     login: (state, action) => {
-      state.value = action.payload;
+      state.user = action.payload;
     },
     logout: (state) => {
       state.user = null;
