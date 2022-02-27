@@ -21,7 +21,7 @@ function App() {
             uid: userAuth.uid,
             displayName: userAuth.displayName,
             email: userAuth.email,
-            pictureURL: userAuth.pictureURL,
+            photoURL: userAuth.photoURL,
         }));
       } else {
         /* The user is Logged out. */

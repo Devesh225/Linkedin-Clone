@@ -32,6 +32,15 @@ function LoginRegister() {
 
     const loginUser = (e) => {
         e.preventDefault(); /* Prevents from Submitting the Form */
+        auth.signInWithEmailAndPassword(email, password)
+        .then((userAuth) => {
+            dispatch(login({
+                email: userAuth.user.email, 
+                displayName: userAuth.user.displayName,
+                uid: userAuth.user.uid,
+                photoURL: userAuth.user.photoURL,
+            }))
+        }).catch((err) => alert(err));
 
     };
 
@@ -55,7 +64,7 @@ function LoginRegister() {
                     uid: userAuth.user.uid,
                     displayName: fullName,
                     email: userAuth.user.email,
-                    pictureURL: profilePicture, /* This is not photoURL, this is a local variable. */
+                    photoURL: profilePicture, /* This is not photoURL, this is a local variable. */
                 }));
             });
         }).catch(err => alert(err));

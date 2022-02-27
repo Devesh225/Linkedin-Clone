@@ -10,12 +10,13 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AppsIcon from '@mui/icons-material/Apps';
 import LogoutIcon from '@mui/icons-material/Logout';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { auth } from '../../Firebase/firebase';
-import { logout } from '../../features/userSlice';
+import { logout, selectUser } from '../../features/userSlice';
 
 function Header() {
   const dispatch = useDispatch();
+  const user = useSelector(selectUser);
   
   const logoutFromApp = () => {
     dispatch(logout()); /* Logout from Redux */
@@ -37,7 +38,7 @@ function Header() {
         <HeaderItem Icon={WorkIcon} title='Jobs' />
         <HeaderItem Icon={ChatBubbleIcon} title='Messaging' />
         <HeaderItem Icon={NotificationsIcon} title='Notifications' />
-        <HeaderItem avatarURL='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' title='Me ▼' />
+        <HeaderItem avatarURL={user.photoURL} title='Me ▼' />
         <HeaderItem Icon={AppsIcon} title='Work ▼' />
         <HeaderItem Icon={LogoutIcon} title='Logout' onClick={logoutFromApp} />
       </div>

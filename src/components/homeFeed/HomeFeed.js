@@ -9,9 +9,11 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import InputOption from './InputOption';
 import Post from './posts/Post';
 import { database } from '../../Firebase/firebase';
+import { selectUser } from '../../features/userSlice';
+import { useSelector } from 'react-redux';
 
 function HomeFeed() {
-
+  const user = useSelector(selectUser);
   const [posts, setPosts] = useState([]); /* Maintaining a state of all posts */ 
   const [inputText, setInputText] = useState('');
 
@@ -44,7 +46,8 @@ function HomeFeed() {
     
     /* The post will be pushed to the database upon hitting Enter, thus calling addPost function */
     database.collection('posts').add({
-      userName: 'Devesh Tulshyan',
+      userName: user.displayName,
+      profilePicture: user.photoURL,
       userDescription: 'Coder, Developer, Musician, Teacher.',
       /* A state for the input text is defined which takes care of the post caption */
       postMessage: inputText,
@@ -60,7 +63,7 @@ function HomeFeed() {
     <div className='homeFeed'>
         <div className="homeFeed__inputArea">
           <div className="homeFeed__avatarText">
-          <Avatar className='homeFeed__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '3.15vw', height: '3.15vw'}}/>
+          <Avatar className='homeFeed__avatar' src={user.photoURL} sx={{width: '3.15vw', height: '3.15vw'}}/>
               <div className="homeFeed__inputText">
                   <form>
                       {/* Getting the value of the text from e.target.value and setting the value to the current input text state. */}
@@ -80,6 +83,7 @@ function HomeFeed() {
           <Post 
             key={post.id}
             userName={post.data.userName}
+            profilePicture={post.data.profilePicture}
             userDescription={post.data.userDescription}
             postMessage={post.data.postMessage}
             postImageURL={post.data.postImageURL}

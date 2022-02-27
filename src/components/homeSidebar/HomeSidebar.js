@@ -6,14 +6,17 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import GroupEventDisplay from './GroupEventDisplay';
 import TagIcon from '@mui/icons-material/Tag';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../features/userSlice';
 
 function HomeSidebar() {
+  const user = useSelector(selectUser);
   return (
     <div className='homeSidebar'>
       <div className="homeSidebar__top">
         <img src="https://wallpaperaccess.com/full/2068772.jpg" alt=""/>
-        <Avatar className='homeSidebar__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '5.15vw', height: '5.15vw'}}/>
-        <h2>Devesh Tulshyan</h2>
+        <Avatar className='homeSidebar__avatar' src={user.photoURL} sx={{width: '5.15vw', height: '5.15vw'}}/>
+        <h2>{user.displayName}</h2>
         <p>Coder, Developer, Musician, Teacher.</p>
       </div>
       <div className="homeSidebar__stats">

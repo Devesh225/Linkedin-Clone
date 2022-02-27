@@ -7,12 +7,11 @@ import InsertCommentOutlinedIcon from '@mui/icons-material/InsertCommentOutlined
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 
-
-function Post({ userName, userDescription, postMessage, postImageURL }) {
+function Post({ userName, profilePicture, userDescription, postMessage, postImageURL }) {
   return (
     <div className='post'>
       <div className="post__header">
-      <Avatar className='post__avatar' src='https://pbs.twimg.com/profile_images/1484824719689846785/6AsOegSZ_400x400.jpg' sx={{width: '3.17vw', height: '3.17vw'}}/>
+      <Avatar className='post__avatar' src={profilePicture} sx={{width: '3.17vw', height: '3.17vw'}}/>
       <div className="post__headerInfo">
         <h2>{userName}</h2>
         <p>{userDescription}</p>
