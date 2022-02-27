@@ -41,6 +41,7 @@
 /* Targeting the input inside the form */
 .homeFeed__inputText > form > input {
     outline-width: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5rem;
     font-weight: 600;
     margin-left: 0.25rem;
