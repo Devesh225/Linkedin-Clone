@@ -29,7 +29,7 @@ function Header() {
         <LinkedInIcon sx={{height: '2.65vw', width: '2.65vw', color: '#0a66c2'}}/>
         <div className="header__search">
           <SearchIcon sx={{height: '1.75vw', width: '1.75vw'}}/>
-          <input type="text" />
+          <input placeholder='Search' type="text" />
         </div>
       </div>
       <div className="header__second"> {/*Second Part of Header containing Options and Profile*/}
