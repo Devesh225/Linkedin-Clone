@@ -28,7 +28,7 @@ function App() {
         dispatch(logout());
       }
     }) /* A listener which listens to any type of Authentication Change. */
-  }, []); /* Empty dependency array because we only want it to run once when the App loads. */
+  }, [dispatch]); /* Empty dependency array because we only want it to run once when the App loads. */
   return (
     <div className="app">
       { !user ? ( <LoginRegister /> ) : (
