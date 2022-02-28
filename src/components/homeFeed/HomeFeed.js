@@ -11,6 +11,7 @@ import Post from './posts/Post';
 import { database } from '../../Firebase/firebase';
 import { selectUser } from '../../features/userSlice';
 import { useSelector } from 'react-redux';
+import FlipMove from 'react-flip-move';
 
 function HomeFeed() {
   const user = useSelector(selectUser);
@@ -79,6 +80,9 @@ function HomeFeed() {
               <InputOption Icon={AssignmentIcon} title='Write article' color='#fc9295'/>
             </div>
         </div>
+
+        {/* {Flip Move animation library to pop messages as sliding animation to the screen} */}
+        <FlipMove> 
         {posts.map((post) => ( /* Rendering Every Post while looping through the posts */
           <Post 
             key={post.id}
@@ -89,6 +93,7 @@ function HomeFeed() {
             postImageURL={post.data.postImageURL}
           />
         ))}
+        </FlipMove>
     </div>
   )
 }
